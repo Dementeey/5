@@ -124,6 +124,7 @@ logo end
 --------------------------------
 */
 
+
 .main {
   height: 1000px; /*  удалить  */
 }
@@ -160,6 +161,7 @@ logo end
   background: url("../img/sprites.png") no-repeat;
   background-position: -207px -97px;
   transform: translateX(-50%);
+  text-transform: uppercase;
 }
 
 .promo__text {
@@ -183,12 +185,138 @@ promo end
 */
 
 
-/*
---------------------------------
-gallery end
---------------------------------
-*/
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
 
+  list-style: none;
+}
+
+.grid__item {
+  position: relative;
+
+  flex: 1 1 533px;
+  max-width: 533px;
+  height: 600px;
+}
+
+.grid__item:nth-child(1),
+.grid__item:nth-child(4) {
+  flex: 2 1 1066px;
+  max-width: 1066px;
+}
+
+.grid__item-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+
+  background-color: #ffffff;
+}
+
+.grid__item-info::after {
+
+}
+
+.grid__item-title {
+  position: relative;
+
+  margin: 0;
+  margin-top: 119px;
+
+  font-size: 1.125rem;
+  text-align: center;
+  color: #353738;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+.grid__item-title::before {
+  content: "";
+  position: absolute;
+}
+
+.grid__item-text {
+  margin: 0;
+  padding: 0 68px;
+
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #848789;
+}
+
+.grid__item-text::after {
+
+}
+
+.grid__item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid__item:nth-child(1) {
+  max-width: 1066px;
+}
+
+.grid__item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 113px;
+  height: 118px;
+
+  background: url("../img/sprites.png") -10px -182px;
+  transform: translate(-50%, -50%);
+}
+
+.grid__item:nth-child(2) .grid__item-title{
+  margin-top: 129px;
+  letter-spacing: 3.6px;
+  margin-left: 4px;
+}
+
+.grid__item:nth-child(2) .grid__item-title::before {
+  top: -59px;
+  left: 50%;
+
+  width: 41px;
+  height: 30px;
+
+  background: url("../img/sprites.png") -143px -182px;
+  transform: translateX(-50%);
+}
+
+.grid__item:nth-child(2) .grid__item-text{
+  margin-top: 11px;
+  padding-right: 70px;
+}
+
+.grid__item:nth-child(3) {
+
+}
+
+.grid__item:nth-child(4) {
+
+}
+
+.grid__item:nth-child(5) {
+
+}
+
+.grid__item:nth-child(6) {
+
+}
+
+.grid__item:nth-child(7) {
+
+}
 
 /*
 --------------------------------
